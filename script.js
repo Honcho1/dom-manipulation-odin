@@ -23,3 +23,16 @@ container.appendChild(containerParagraph);
 body.appendChild(paragraph);
 body.appendChild(heading);
 body.appendChild(container);
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(button.id);
+  });
+});
