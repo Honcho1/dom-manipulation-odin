@@ -17,10 +17,9 @@ containerParagraph.textContent = "ME TOO!";
 
 const body = document.querySelector("body");
 
-body.appendChild(paragraph);
-body.appendChild(heading);
-
 container.appendChild(containerHeading);
 container.appendChild(containerParagraph);
 
+body.appendChild(paragraph);
+body.appendChild(heading);
 body.appendChild(container);
